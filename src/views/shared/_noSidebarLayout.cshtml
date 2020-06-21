@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <!--<link rel="stylesheet" href="/redirect.php?url=aHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvc2VtYW50aWMtdWkvMi4yLjEzL3NlbWFudGljLm1pbi5jc3M="/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/default.css"/>
+</head>
+<body>
+    <!-- top menu -->
+    <div class="ui inverted huge borderless fluid menu">
+      <a class="header item">Odminus</a>
+      <div class="right menu">
+        <a class="item">Настройки</a>
+        <a class="item">Помощь</a>
+      </div>
+    </div>
+    <div class="ui container">
+        @RenderBody()
+    </div>
+</body>

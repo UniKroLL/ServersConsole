@@ -1,0 +1,22 @@
+@{
+    Layout = "_noSidebarLayout";
+}
+<h2 class="ui dividing header">Агент кластера</h2>
+
+<form asp-action="add" class="ui form">
+    
+    <p class="field">
+        <label for="Идентификатор">Идентификатор</label>
+        <input name="Идентификатор"></input>
+    </p>
+    <p class="field">
+        <label for="СетевоеИмя">Сетевое имя</label>
+        <input name="СетевоеИмя"></input>
+    </p>
+    <p class="field">
+        <label for="Порт">Порт</label>
+        <input name="Порт"></input>
+    </p>
+    
+    <button type="submit" class="ui primary button">Сохранить</button>
+</form>
