@@ -2,9 +2,11 @@
     Layout = "_noSidebarLayout";
 }
 <h1>Агенты администрируемых серверов</h1>
+
 <div id="cmdbar" class="ui buttons">
     <a asp-action="add" class="ui primary button">Добавить</a>
 </div>
+
 <table class="ui basic selectable table">
 <thead>
     <tr>
@@ -12,6 +14,7 @@
         <th>Сетевое имя</th>
         <th>Порт</th>
         <th>Режим</th>
+        <th>Удалить</th>
     </tr>
 </thead>
 <tbody>
@@ -21,6 +24,7 @@
             <td>@row.СетевоеИмя</td>
             <td>@row.Порт</td>
             <td>@row.Режим</td>
+            <td><a asp-action="delete" asp-route-id="@row.Идентификатор"><i class="remove icon"></i></a></td>
         </tr>
     }
 </tbody>
